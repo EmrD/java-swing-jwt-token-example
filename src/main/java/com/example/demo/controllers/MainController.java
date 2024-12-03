@@ -17,7 +17,6 @@ import io.jsonwebtoken.security.Keys;
 
 @RestController
 public class MainController {
-    // Güçlü bir anahtar oluşturuyoruz
     private static final SecretKey SECRET_KEY = Keys.secretKeyFor(SignatureAlgorithm.HS256);
 
     @GetMapping("/api/v1/auth/createToken")
